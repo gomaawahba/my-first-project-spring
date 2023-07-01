@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gomaawahba</groupId>
+  <artifactId>hello-spring</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+  <dependencies>
+	    <dependency>
+	    <groupId>org.springframework.data</groupId>
+	    <artifactId>spring-data-jpa</artifactId>
+	    <version>2.4.7</version>
+	</dependency>
+			<dependency>
+			  <groupId>javax.servlet</groupId>
+			  <artifactId>javax.servlet-api</artifactId>
+			  <version>3.1.0</version>
+			  <scope>provided</scope>
+			</dependency>
+						<!-- https://mvnrepository.com/artifact/javax/javaee-web-api -->
+			<dependency>
+			    <groupId>javax</groupId>
+			    <artifactId>javaee-web-api</artifactId>
+			    <version>8.0</version>
+			    <scope>provided</scope>
+			</dependency>
+
+  </dependencies>
+  <build>
+	  <pluginManagement>
+		  <plugins>
+
+			  <plugin>
+				  <groupId>org.apache.maven.plugins</groupId>
+				  <artifactId>maven-compiler-plugin</artifactId>
+				  <version>3.1</version>
+				  <configuration>
+					  <showWarnings>true</showWarnings>
+				  </configuration>
+			  </plugin>
+			   <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+              <path>/</path>
+            <contextReloadable></contextReloadable>
+        </configuration>
+        </plugin>
+			  
+			 
+		  </plugins>
+	  </pluginManagement>
+	  
+ 
+  </build>
+  
+</project>
